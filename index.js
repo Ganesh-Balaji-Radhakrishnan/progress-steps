@@ -39,6 +39,8 @@ function update() {
   progress.style.width =
     ((actives.length - 1) / (circles.length - 1)) * 100 + '%'
 
+  console.log(actives.length, circles.length) //to understand the logic behind the progressbar width
+
   if (elementCount === 1) {
     prev.disabled = true
   } else if (elementCount === circles.length) {
